@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return "Hello World"
+    return "Welcome to my social media API"
 
 
 @app.get("/posts")      # Get all the posts
