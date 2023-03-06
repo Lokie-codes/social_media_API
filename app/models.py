@@ -1,6 +1,5 @@
 from typing import Union
 from pydantic import BaseModel
-from .data import my_posts
 
 
 class Post(BaseModel):
@@ -10,10 +9,10 @@ class Post(BaseModel):
     published: bool = True
 
 
-def get_post(id):
-    for p in my_posts:
-        if p['id'] == id:
-            return p
+# def get_post(id):
+#     for p in my_posts:
+#         if p['id'] == id:
+#             return p
 
 
 # def find_index_post(id):

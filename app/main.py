@@ -1,11 +1,8 @@
-from random import randrange
 from fastapi import FastAPI, Response, status, HTTPException
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
-
-from .data import my_posts
-from .post import Post, get_post
+from .models import Post
 
 app = FastAPI()
 while True:
