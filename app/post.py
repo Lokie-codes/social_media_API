@@ -1,6 +1,6 @@
 from typing import Union
 from pydantic import BaseModel
-from data import my_posts
+from .data import my_posts
 
 
 class Post(BaseModel):
